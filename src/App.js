@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          This is deloyed to Firebase with Github CI/CD
         </a>
       </header>
     </div>

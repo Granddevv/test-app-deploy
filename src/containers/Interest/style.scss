@@ -1,0 +1,31 @@
+.section-interest {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+
+  .section-wrapper {
+    width: 100%;
+    max-width: 1024px;
+
+    h1 {
+      color: #606060;
+      margin-bottom: 40px;
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .interest-container {
+      width: 100%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+      .items-container {
+        display: flex;
+        justify-content: center;
+
+        .item-wrapper {
+          margin: 15px;
+        }
+      }
+    }
+  }
+}

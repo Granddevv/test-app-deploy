@@ -1,0 +1,37 @@
+.section-service {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+
+  .section-wrapper {
+    max-width: 1024px;
+    width: 100%;
+
+    h1 {
+      color: #606060;
+      margin-bottom: 40px;
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .service-container {
+      display: grid;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+
+      .service-section-item {
+        margin: 10px;
+        background: #424242;
+        padding: 20px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+        h3 {
+          color: #fff;
+        }
+
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

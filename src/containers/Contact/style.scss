@@ -1,0 +1,17 @@
+.section-contact {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+
+  .section-wrapper {
+    width: 100%;
+    max-width: 1024px;
+
+    h1 {
+      color: #606060;
+      margin-bottom: 40px;
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.progress-container {
+  margin: 20px 20px;
+
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      color: #fff;
+      margin: 5px 0;
+      font-size: 15px;
+      font-weight: 300;
+    }
+  }
+
+  .bar-container {
+    position: relative;
+    padding: 8px 0;
+
+    .bar-point {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .bar-content {
+      width: 100%;
+      height: 4px;
+      background: #000;
+      border-radius: 2px;
+    }
+
+    .bar-content-fill {
+      width: 0%;
+      height: 4px;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 8px 0;
+      border-radius: 2px;
+    }
+  }
+}

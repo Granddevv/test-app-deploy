@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import './bootrstrap.css'
 import MainPage from './containers';
 import Spinner from './components/Spinner';
 import {

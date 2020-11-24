@@ -4,31 +4,22 @@ import AddToQueueIcon from '@material-ui/icons/AddToQueue';
 import SettingsIcon from '@material-ui/icons/Settings';
 import AppsIcon from '@material-ui/icons/Apps';
 
-const Services = () => {
+const Services = ({
+    services
+                  }) => {
     return (
         <div className="section-service">
             <div className="section-wrapper">
                 <h1>SERVICES</h1>
 
                 <div className="service-container">
-                    <div className="service-section-item">
-                        <AddToQueueIcon
-                            fontSize={'large'}
-                            color="action" />
-                        <h3>Title</h3>
-                        <p>Description</p>
-                    </div>
-                    <div className="service-section-item">
-                        <AddToQueueIcon color="action" />
-                        <h3>Title</h3>
-                        <p>Description</p>
-                    </div>
-                    <div className="service-section-item">
-                        <AddToQueueIcon color="action" />
-                        <h3>Title</h3>
-                        <p>Description</p>
-                    </div>
-
+                    {services.map(item => (
+                        <div className="service-section-item">
+                            <img src={item.icon} />
+                            <h3>{item.title}</h3>
+                            <p>{item.description}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
 

@@ -95,7 +95,7 @@ const MainPage = () => {
                 sectionTitle={'EDUCATION'}
                 history={profile.education}
             />
-            <Services />
+            <Services services={profile.services}/>
             <Portfolios />
             <Archievement />
             <Interest />

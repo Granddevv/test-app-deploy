@@ -147,6 +147,24 @@ const profileInfor = [
                 period: 'January 2015 - February 2017',
                 description: "I've worked on 3 main products including SPA, Landing Page, PWA. Built the initial products very quickly and upgraded its version to 2.0, 3.0. Customized the whole layout and converted"
             }
+        ],
+        services: [
+            {
+                title: 'Android Application',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies.',
+                icon: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1606219243/download_1_l8b7f9.png'
+            },
+            {
+                title: 'Android Application',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies.',
+                icon: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1606219243/download-1_fefdzq.png'
+            },
+            {
+                title: 'Android Application',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies.',
+                icon: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1606219243/download_yoquc7.png'
+            },
+
         ]
     }
 ]

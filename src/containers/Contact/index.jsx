@@ -5,27 +5,38 @@ import Button from '@material-ui/core/Button';
 import './style.scss';
 
 const Contact = React.forwardRef((props, ref) => {
+    const {
+        contactOption
+    } = props;
     return (
         <div className="section-contact" ref={ref}>
             <div className="section-wrapper">
                 <h1>CONTACT</h1>
                 <div className="contact-container">
                     <div className="side-left">
-
+                        {contactOption.phone && <div className="contact-item-container">
+                            <i className="ion-android-phone-portrait" />
+                            <span>{contactOption.phone}</span>
+                        </div>}
+                        {contactOption.email && <div className="contact-item-container">
+                            <i className="ion-email" />
+                            <span>{contactOption.email}</span>
+                        </div> }
+                        {contactOption.linkedin && <div className="contact-item-container">
+                            <i className="ion-social-linkedin" />
+                            <span>{contactOption.linkedin}</span>
+                        </div> }
+                        {contactOption.address && <div className="contact-item-container">
+                            <i className="ion-ios-location" />
+                            <span>{contactOption.address}</span>
+                        </div> }
                     </div>
                     <div className="side-right">
-                        <Input placeholder="Name" />
-                        <Input placeholder="Subject" />
-                        <Input placeholder="Email" />
-                        <TextareaAutosize
-                            rowsMax={4}
-                            aria-label="maximum height"
-                            placeholder="Maximum 4 rows"
-                            defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua."
-                        />
+                        <Input className="form-input" placeholder="Name" />
+                        <Input className="form-input" placeholder="Subject" />
+                        <Input className="form-input" placeholder="Email" />
+                        <Input className="form-input" multiline={true} rows={4} placeholder="Massage" />
                         <Button color="primary">Send</Button>
-
                     </div>
                 </div>
             </div>

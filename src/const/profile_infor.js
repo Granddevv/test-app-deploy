@@ -7,7 +7,9 @@ const profileInfor = [
         profileUrl: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1605864670/react_vbpsq7.png',
         contactOption: {
             linkedin: 'https://www.linkedin.com/in/anthony-wong-500b15143/',
-            phone: '192923823'
+            phone: '+1 (929) 238-2322',
+            address: "Toronto, Canada",
+            email: 'wooonganthony@gmail.com'
         },
         overview: "Hi, This is Anthony. I have been working with various project for over 8 years and here are looking soso as a senior developer, I have rich experience in building web applications using React and Redux.",
         workHistory: [

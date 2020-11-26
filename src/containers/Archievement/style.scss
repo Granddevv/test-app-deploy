@@ -1,7 +1,7 @@
 .section-archievement {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding: 100px 20px 0 20px;
 
   .section-wrapper {
     width: 100%;
@@ -28,7 +28,7 @@
           padding: 6px;
           h3 {
             margin: 0;
-            font-size: 1.2em;
+            font-size: 1em;
             color: #fff;
             font-weight: 400;
             padding: 5px;

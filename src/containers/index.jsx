@@ -108,6 +108,7 @@ const MainPage = () => {
             <Interest interest={profile.interests} />
             <Contact
                 ref={contactRef}
+                contactOption={profile.contactOption}
             />
         </div>
     )

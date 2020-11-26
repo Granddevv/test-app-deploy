@@ -1,7 +1,9 @@
 .section-contact {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding: 100px 20px 0 20px;
+  margin-bottom: 100px;
+  font-family: 'Roboto', sans-serif;
 
   .section-wrapper {
     width: 100%;
@@ -12,6 +14,53 @@
       margin-bottom: 40px;
       font-size: 30px;
       font-weight: 500;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 40% 60%;
+
+      .side-left {
+        padding: 40px;
+        background-color: #424242;
+        min-height: 480px;
+        height: auto;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        margin-right: 20px;
+        border-radius: 2px;
+        transition: box-shadow .25s;
+
+        .contact-item-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 15px;
+
+          i {
+            font-size: 30px;
+            color: #fff;
+          }
+
+          span {
+            color: #fff;
+            margin-top: 5px;
+            font-weight: 300;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .side-right {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        .form-input {
+          margin: 20px 0;
+        }
+      }
     }
   }
 }

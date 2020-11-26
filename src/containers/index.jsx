@@ -96,9 +96,9 @@ const MainPage = () => {
                 history={profile.education}
             />
             <Services services={profile.services}/>
-            <Portfolios />
-            <Archievement />
-            <Interest />
+            <Portfolios portfolios={profile.portfolios} />
+            <Archievement certifications={profile.certifications} />
+            <Interest interest={profile.interests} />
             <Contact
                 ref={contactRef}
             />

@@ -1,17 +1,22 @@
 import React from 'react';
 import './style.scss';
 
-const Interest = () => {
+const Interest = ({
+                      interest
+                  }) => {
     return (
         <div className="section-interest">
             <div className="section-wrapper">
                 <h1>INTEREST</h1>
                 <div className="interest-container">
-                    <p>soslsdfsf good iing ig ig idigididiiididiiidididiididididiiiid</p>
+                    <p>{interest.title}</p>
                     <div className="items-container">
-                        <div className="item-wrapper">
-                            <h6>Sports</h6>
-                        </div>
+                        {interest.options.map(option => (
+                            <div className="item-wrapper">
+                                <i className={option.iconName} />
+                                <span>{option.title}</span>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

@@ -13,6 +13,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
+        env:
+          REACT_APP_EMAIL_SERVICE_ID: service_gem7aek
+          REACT_APP_EMAIL_TEMPLATE_ID: template_unobcuw
         run: CI=false npm run build
       - name: Deploy to Firebase
         uses: lowply/deploy-firebase@v0.0.2

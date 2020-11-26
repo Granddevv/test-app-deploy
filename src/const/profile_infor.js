@@ -165,7 +165,73 @@ const profileInfor = [
                 icon: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1606219243/download_yoquc7.png'
             },
 
-        ]
+        ],
+        portfolios: [
+            {
+                title: "Izenda UI Development - React",
+                description: "Izenda is a managmenet system. This is based on React frontend and C# & ASP.NET backend. I worked on this project as a frontend developer and built the whole UI and integrated",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606381357/20_zapcvv.png"
+            },
+            {
+                title: "Izenda UI Development - React",
+                description: "Izenda is a managmenet system. This is based on React frontend and C# & ASP.NET backend. I worked on this project as a frontend developer and built the whole UI and integrated",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606381357/20_zapcvv.png"
+            },
+            {
+                title: "Izenda UI Development - React",
+                description: "Izenda is a managmenet system. This is based on React frontend and C# & ASP.NET backend. I worked on this project as a frontend developer and built the whole UI and integrated",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606381357/20_zapcvv.png"
+            },
+            {
+                title: "Izenda UI Development - React",
+                description: "Izenda is a managmenet system. This is based on React frontend and C# & ASP.NET backend. I worked on this project as a frontend developer and built the whole UI and integrated",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606381357/20_zapcvv.png"
+            }
+        ],
+        certifications: [
+            {
+                title: "JavaScript Certification",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606383221/testdome_logo_fvs42d.png"
+            },
+            {
+                title: "React.JS Certification",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606383221/testdome_logo_fvs42d.png"
+            },
+            {
+                title: "Node.JS Certification",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606383221/testdome_logo_fvs42d.png"
+            },
+
+        ],
+        interests: {
+            title: 'I like music and play the guitar when I have some free time. Football is my favorite sports and I like playing with my friends.',
+            options: [
+                {
+                    title: 'Football',
+                    iconName: 'ion-ios-football'
+                },
+                {
+                    title: 'Football',
+                    iconName: 'ion-ios-football'
+                },
+                {
+                    title: 'Football',
+                    iconName: 'ion-ios-football'
+                },
+                {
+                    title: 'Football',
+                    iconName: 'ion-ios-football'
+                },
+                {
+                    title: 'Football',
+                    iconName: 'ion-ios-football'
+                },
+                {
+                    title: 'Football',
+                    iconName: 'ion-ios-football'
+                }
+            ]
+        }
     }
 ]
 

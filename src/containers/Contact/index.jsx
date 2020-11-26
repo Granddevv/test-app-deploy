@@ -4,6 +4,8 @@ import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import Button from '@material-ui/core/Button';
 import './style.scss';
 import { sendEmailByJS } from '../../service/email';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 
 const Contact = React.forwardRef((props, ref) => {
     const {
@@ -11,6 +13,10 @@ const Contact = React.forwardRef((props, ref) => {
     } = props;
 
     const handleSubmit = async () => {
+        if(!email || email.length === 0) {
+            NotificationManager.error('Error!', 'Email is required');
+            return ;
+        }
         await sendEmailByJS(
             process.env.REACT_APP_EMAIL_SERVICE_ID,
             process.env.REACT_APP_EMAIL_TEMPLATE_ID,
@@ -23,6 +29,11 @@ const Contact = React.forwardRef((props, ref) => {
                 to_name: contactOption.name
             },
         );
+        NotificationManager.success('Success!', 'Thanks for your contacting');
+        setName('');
+        setSubject('');
+        setEmail('');
+        setMessage('');
     }
 
     const [name, setName] = useState('');
@@ -61,6 +72,7 @@ const Contact = React.forwardRef((props, ref) => {
                     </div>
                 </div>
             </div>
+            <NotificationContainer />
         </div>
     )
 })

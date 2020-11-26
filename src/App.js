@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'react-notifications/lib/notifications.css';
 import MainPage from './containers';
 import Spinner from './components/Spinner';
 import {

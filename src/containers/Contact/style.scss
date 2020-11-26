@@ -48,6 +48,10 @@
             font-size: 15px;
           }
         }
+
+        @media (max-width: 767px) {
+          margin-right: 0;
+        }
       }
 
       .side-right {
@@ -60,6 +64,14 @@
         .form-input {
           margin: 20px 0;
         }
+
+        @media (max-width: 767px) {
+          margin-left: 0;
+        }
+      }
+
+      @media (max-width: 767px) {
+        grid-template-columns: 100%;
       }
     }
   }

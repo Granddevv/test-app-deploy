@@ -9,7 +9,8 @@ const profileInfor = [
             linkedin: 'https://www.linkedin.com/in/anthony-wong-500b15143/',
             phone: '+1 (929) 238-2322',
             address: "Toronto, Canada",
-            email: 'wooonganthony@gmail.com'
+            email: 'wooonganthony@gmail.com',
+            name: 'Anthony Wong'
         },
         overview: "Hi, This is Anthony. I have been working with various project for over 8 years and here are looking soso as a senior developer, I have rich experience in building web applications using React and Redux.",
         workHistory: [

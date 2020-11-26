@@ -13,7 +13,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
-        run: npm run build
+        run: CI=false npm run build
       - name: Deploy to Firebase
         uses: lowply/deploy-firebase@v0.0.2
         env:

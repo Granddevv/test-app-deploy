@@ -35,7 +35,7 @@ const Contact = React.forwardRef((props, ref) => {
                         <Input className="form-input" placeholder="Name" />
                         <Input className="form-input" placeholder="Subject" />
                         <Input className="form-input" placeholder="Email" />
-                        <Input className="form-input" multiline={true} rows={4} placeholder="Massage" />
+                        <Input className="form-input" multiline={true} rows={4} placeholder="Message" />
                         <Button color="primary">Send</Button>
                     </div>
                 </div>

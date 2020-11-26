@@ -26,6 +26,7 @@
       max-width: 1024px;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       padding: 140px 40px 57px;
+      margin: 0 20px;
 
       .contact-container {
         display: flex;
@@ -49,8 +50,9 @@
 
       .action-container {
         button {
-          margin: 0 15px;
+          margin: 10px 15px;
           background-color: #38bcd4;
+          width: 170px;
         }
       }
     }

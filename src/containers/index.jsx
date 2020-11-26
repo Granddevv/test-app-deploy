@@ -103,7 +103,7 @@ const MainPage = () => {
 
 
     return (
-        <div>
+        <div className="main-page-container">
             <Header
                 firstName={profile.firstName}
                 lastName={profile.lastName}

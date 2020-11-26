@@ -1,0 +1,38 @@
+.not-found-page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+  .page-back-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+    p {
+      font-size: 400px;
+      margin: 0;
+      font-weight: bolder;
+      color: #e2e6e9;
+    }
+  }
+
+  .page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    p {
+      color: #718097;
+      font-size: 52px;
+      font-weight: bolder;
+    }
+  }
+}

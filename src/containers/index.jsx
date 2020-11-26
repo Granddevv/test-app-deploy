@@ -13,6 +13,7 @@ import Portfolios from './Portfolios';
 import Archievement from './Archievement';
 import Interest from './Interest';
 import Contact from './Contact';
+import NotFound from "./NotFound";
 
 const MainPage = () => {
     let location = useLocation();
@@ -32,7 +33,13 @@ const MainPage = () => {
     let param = url.replace('/', '');
     let profile = profileInfor.find(profile => profile.key === param);
 
-    if(loading || !profile) {
+    if(!profile) {
+        return (
+            <NotFound />
+        )
+    }
+
+    if(loading) {
         return <Spinner
             firstName={profile.firstName}
             lastName={profile.lastName}

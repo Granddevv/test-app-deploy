@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.scss'
 
-const Portfolios = ({
-    portfolios
-                    }) => {
+const Portfolios = React.forwardRef((props, ref) => {
+    const {
+        portfolios
+    } = props;
     return (
-        <div className="section-portfolio">
+        <div className="section-portfolio" ref={ref}>
             <div className="section-wrapper">
                 <h1>PORTFOLIOS</h1>
                 <div className="portfolio-section">
@@ -23,6 +24,6 @@ const Portfolios = ({
             </div>
         </div>
     )
-}
+})
 
 export default Portfolios

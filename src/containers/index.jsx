@@ -21,6 +21,14 @@ const MainPage = () => {
     const [loading, setLoading] = useState(true);
     const contactRef = useRef(null);
     const introductionRef = useRef(null);
+    const aboutRef = useRef(null);
+    const experienceRef = useRef(null);
+    const skillRef = useRef(null);
+    const educationRef = useRef(null);
+    const serviceRef = useRef(null);
+    const portfolioRef = useRef(null);
+    const archivementRef = useRef(null);
+    const interestRef = useRef(null)
 
     useEffect(() => {
         setTimeout(() => {
@@ -60,6 +68,30 @@ const MainPage = () => {
             case 'introduction':
                 scrollToRef(introductionRef);
                 break;
+            case 'about':
+                scrollToRef(aboutRef);
+                break;
+            case 'experience':
+                scrollToRef(experienceRef);
+                break;
+            case 'service':
+                scrollToRef(serviceRef);
+                break;
+            case 'education':
+                scrollToRef(educationRef);
+                break;
+            case 'skill':
+                scrollToRef(skillRef);
+                break;
+            case 'portfolio':
+                scrollToRef(portfolioRef);
+                break;
+            case 'archivement':
+                scrollToRef(archivementRef);
+                break;
+            case 'interest':
+                scrollToRef(interestRef);
+                break;
             case 'contact':
                 scrollToRef(contactRef);
                 break;
@@ -90,22 +122,38 @@ const MainPage = () => {
                 contactOption={profile.contactOption}
                 overview={profile.overview}
                 handleNavigate={handleNavigate}
+                ref={aboutRef}
             />
             <TimeLine
                 sectionTitle={'EXPERIENCE'}
                 history={profile.workHistory}
+                ref={experienceRef}
             />
             <Skill
                 skillOption={profile.skill}
+                ref={skillRef}
             />
             <TimeLine
                 sectionTitle={'EDUCATION'}
                 history={profile.education}
+                ref={educationRef}
             />
-            <Services services={profile.services}/>
-            <Portfolios portfolios={profile.portfolios} />
-            <Archievement certifications={profile.certifications} />
-            <Interest interest={profile.interests} />
+            <Services
+                services={profile.services}
+                ref={serviceRef}
+            />
+            <Portfolios
+                portfolios={profile.portfolios}
+                ref={portfolioRef}
+            />
+            <Archievement
+                certifications={profile.certifications}
+                ref={archivementRef}
+            />
+            <Interest
+                interest={profile.interests}
+                ref={interestRef}
+            />
             <Contact
                 ref={contactRef}
                 contactOption={profile.contactOption}

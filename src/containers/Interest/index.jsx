@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.scss';
 
-const Interest = ({
-                      interest
-                  }) => {
+const Interest = React.forwardRef((props, ref) => {
+    const {
+        interest
+    } = props
     return (
-        <div className="section-interest">
+        <div className="section-interest" ref={ref}>
             <div className="section-wrapper">
                 <h1>INTEREST</h1>
                 <div className="interest-container">
@@ -22,6 +23,6 @@ const Interest = ({
             </div>
         </div>
     )
-}
+})
 
 export default Interest;

@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.scss'
 
-const Archievement = ({
-                          certifications
-                      }) => {
+const Archievement = React.forwardRef((props, ref) => {
+    const {
+        certifications
+    } = props;
     return (
-        <div className="section-archievement">
+        <div className="section-archievement" ref={ref}>
             <div className="section-wrapper">
                 <h1>ARCHIVEMENT</h1>
                 <div className="archieve-container">
@@ -23,6 +24,6 @@ const Archievement = ({
             </div>
         </div>
     )
-}
+})
 
 export default Archievement

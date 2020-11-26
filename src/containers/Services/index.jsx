@@ -4,11 +4,12 @@ import AddToQueueIcon from '@material-ui/icons/AddToQueue';
 import SettingsIcon from '@material-ui/icons/Settings';
 import AppsIcon from '@material-ui/icons/Apps';
 
-const Services = ({
-    services
-                  }) => {
+const Services = React.forwardRef((props, ref) => {
+    const {
+        services
+    } = props;
     return (
-        <div className="section-service">
+        <div className="section-service" ref={ref}>
             <div className="section-wrapper">
                 <h1>SERVICES</h1>
 
@@ -25,6 +26,6 @@ const Services = ({
 
         </div>
     )
-}
+})
 
 export default Services;

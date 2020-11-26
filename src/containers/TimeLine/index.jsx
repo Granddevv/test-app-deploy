@@ -2,9 +2,10 @@ import React from 'react';
 import './style.scss';
 import AdjustIcon from '@material-ui/icons/Adjust';
 
-const TimeLine = ({history, sectionTitle}) => {
+const TimeLine = React.forwardRef((props, ref) => {
+    const {history, sectionTitle} = props;
     return (
-        <div className="timeline-container">
+        <div className="timeline-container" ref={ref}>
             <div className="timeline-wrapper">
                 <div className="title-container">
                     <h1>{sectionTitle}</h1>
@@ -34,6 +35,6 @@ const TimeLine = ({history, sectionTitle}) => {
             </div>
         </div>
     )
-}
+})
 
 export default TimeLine

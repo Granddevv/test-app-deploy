@@ -9,14 +9,15 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import Button from '@material-ui/core/Button';
 
-const About = ({
-                   profileUrl,
-                   handleNavigate,
-                   contactOption,
-                   overview
-               }) => {
+const About = React.forwardRef((props, ref) => {
+    const {
+        profileUrl,
+        handleNavigate,
+        contactOption,
+        overview
+    } = props;
     return (
-        <div className="section-about">
+        <div className="section-about" ref={ref}>
             <div className="avatar-wrapper">
                 <div className="avatar-container" style={{backgroundImage: `url("${profileUrl}")`}}>
 
@@ -50,6 +51,6 @@ const About = ({
             </div>
         </div>
     )
-}
+})
 
 export default About

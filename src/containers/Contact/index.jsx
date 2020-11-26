@@ -17,6 +17,7 @@ const Contact = React.forwardRef((props, ref) => {
             NotificationManager.error('Error!', 'Email is required');
             return ;
         }
+        console.log("env variables: ", process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID)
         await sendEmailByJS(
             process.env.REACT_APP_EMAIL_SERVICE_ID,
             process.env.REACT_APP_EMAIL_TEMPLATE_ID,

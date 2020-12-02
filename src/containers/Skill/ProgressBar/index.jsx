@@ -12,7 +12,7 @@ const ProgressBar = ({
                 <h4>{value}%</h4>
             </div>
             <div className="bar-container">
-                <div className="bar-point" style={{left: `${value}%`}}></div>
+                <div className="bar-point" style={{left: `${value - 4}%`}}></div>
                 <div className="bar-content"></div>
                 <div className="bar-content-fill" style={{width: `${value}%`}}></div>
             </div>

@@ -14,6 +14,7 @@ import Archievement from './Archievement';
 import Interest from './Interest';
 import Contact from './Contact';
 import NotFound from "./NotFound";
+import Education from './Education';
 
 const MainPage = () => {
     let location = useLocation();
@@ -133,7 +134,7 @@ const MainPage = () => {
                 skillOption={profile.skill}
                 ref={skillRef}
             />
-            <TimeLine
+            <Education
                 sectionTitle={'EDUCATION'}
                 history={profile.education}
                 ref={educationRef}

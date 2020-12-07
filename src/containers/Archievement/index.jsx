@@ -16,6 +16,7 @@ const Archievement = React.forwardRef((props, ref) => {
                                 <h3>{certification.title}</h3>
                             </div>
                             <div className="content-container">
+                                <span>{certification.title + ' Certification!'}</span>
                                 <img className="cert-logo" src={certification.url} />
                             </div>
                         </div>

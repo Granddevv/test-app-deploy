@@ -45,6 +45,13 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-direction: column;
+
+          span {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-shadow: 12px 7px 4px rgba(0, 0, 0, 0.29);
+          }
 
           img {
             width: 180px;

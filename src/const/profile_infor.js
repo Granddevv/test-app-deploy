@@ -256,28 +256,28 @@ const profileInfor = [
                 companyName: 'Self Employed',
                 country: 'Canada',
                 period: 'Apr 2020 - ',
-                description: "I worked on 2 short term projects as a freelance developer because of COVID-19. One was building native application and dashboard application using React, React Native. The another one was building real time data post application using React & Ionic."
+                description: "I worked on 2 short term projects as a freelance developer because of COVID-19. One was building a native application and dashboard application using React, React Native. The another one was building real time data posting application using React & Ionic."
             },
             {
                 title: 'Full Stack Web & Mobile Developer',
                 companyName: 'Memory',
                 country: 'Oslo, Norway',
                 period: 'Oct 2019 - Apr 2020',
-                description: "I worked on time tracking application and dashboard UI using Angular, Ionic."
+                description: "I worked on time tracking application and dashboard UI using Angular, Ionic. For the main UI development, I used Angular 8 and RxJS and implemented State Management using NgRx. For the mobile application, I used Ionic and Angular and implemented time tracking functionalities."
             },
             {
                 title: 'Full Stack Web Developer',
                 companyName: 'Recart',
                 country: 'Budapest, Hungary',
                 period: 'Jul 2018 - Aug 2019',
-                description: "I worked on building shopify facebook messenger application using React.JS."
+                description: "I worked on building a shopify facebook messenger application using React.JS. Implemented Messnenger Editor Application and Dashboard Application. Customized the whole component and built well designed structure using Redux, HOC."
             },
             {
                 title: 'Senior Frontend Developer',
                 companyName: 'Izenda',
                 country: 'Atlanta, United States',
                 period: 'Apr 2017 - Sep 2018',
-                description: "Worked on building dashboard data analyze application using React.JS & Mobx"
+                description: "Worked on building dashboard data analyze application using React.JS & Mobx. Implemented State Management using Mobx and Observable and built the whole UI using React.JS. Tried to building reusable codebase using HOC."
             }
         ],
         skill: [
@@ -369,17 +369,17 @@ const profileInfor = [
         services: [
             {
                 title: 'Web Frontend Development',
-                description: '',
+                description: 'Very experienced in JavaScript and JavaScript frameworks - React.JS, Angular, Vue. Worked on various kinds of applications - SPA(Single Page Application), PWA(Progressive Web Application), Hybrid Application. Delivering well designed product, good responsiveness are my passion.',
                 icon: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1606219243/download_1_l8b7f9.png'
             },
             {
                 title: 'Web Backend Development',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies.',
+                description: 'Very experienced in JavaScript & Node.JS, Node-Express, MongoDB. Implemented the whole RESTful API System and focused on building clean, reusable codebase. Very strong experience in GraphQL using Apollo Server, TypeORM, PostgreSQL, Node-Express.',
                 icon: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1606219243/download-1_fefdzq.png'
             },
             {
                 title: 'Native App Application',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum venenatis pharetra mi, ut vestibulum elit ultricies.',
+                description: 'Strong experience in Native App Development using React Native, Ionic, Cordova. Worked on 8 large scale projects and implemented various features & functionalities. ',
                 icon: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1606219243/download_yoquc7.png'
             },
 
@@ -391,19 +391,19 @@ const profileInfor = [
                 url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606381357/20_zapcvv.png"
             },
             {
-                title: "Izenda UI Development - React",
-                description: "Izenda is a managmenet system. This is based on React frontend and C# & ASP.NET backend. I worked on this project as a frontend developer and built the whole UI and integrated",
-                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606381357/20_zapcvv.png"
+                title: "Recart Dashboard UI Development - React",
+                description: "Recart is a shopify facebook messenger, I worked as a full stack developer. On the frontend side, I implemented the whole UI using React, Redux. On the backend side, I used Ruby on Rails for creating RESTful APIs",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1607303602/portfolio/recart_njesjg.jpg"
             },
             {
-                title: "Izenda UI Development - React",
-                description: "Izenda is a managmenet system. This is based on React frontend and C# & ASP.NET backend. I worked on this project as a frontend developer and built the whole UI and integrated",
-                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606381357/20_zapcvv.png"
+                title: "Timely App - Angular",
+                description: "Timely App is a time tracking application and I worked as a full stack developer.",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1607303603/portfolio/timely_scwjb1.png"
             },
             {
-                title: "Izenda UI Development - React",
-                description: "Izenda is a managmenet system. This is based on React frontend and C# & ASP.NET backend. I worked on this project as a frontend developer and built the whole UI and integrated",
-                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1606381357/20_zapcvv.png"
+                title: "Myda Cloud - React, GraphQL",
+                description: "Myda cloud is a business tracking application and I worked as a full stack developer.",
+                url: "https://res.cloudinary.com/dzz64onxh/image/upload/v1607303602/portfolio/myda_rja18d.jpg"
             }
         ],
         certifications: [
@@ -422,31 +422,31 @@ const profileInfor = [
 
         ],
         interests: {
-            title: 'I like music and play the guitar when I have some free time. Football is my favorite sports and I like playing with my friends.',
+            title: 'I like music and play the guitar when I have some free time. Football is my favorite sports and I like playing it with my friends.',
             options: [
                 {
-                    title: 'Football',
-                    iconName: 'ion-ios-football'
+                    title: 'Documentary',
+                    iconName: 'ion-ios-film'
+                },
+                {
+                    title: 'Blogging',
+                    iconName: 'ion-compose'
+                },
+                {
+                    title: 'Music',
+                    iconName: 'ion-headphone'
                 },
                 {
                     title: 'Football',
                     iconName: 'ion-ios-football'
                 },
                 {
-                    title: 'Football',
-                    iconName: 'ion-ios-football'
+                    title: 'Traveling',
+                    iconName: 'ion-plane'
                 },
                 {
-                    title: 'Football',
-                    iconName: 'ion-ios-football'
-                },
-                {
-                    title: 'Football',
-                    iconName: 'ion-ios-football'
-                },
-                {
-                    title: 'Football',
-                    iconName: 'ion-ios-football'
+                    title: 'Gaming',
+                    iconName: 'ion-ios-game-controller-b'
                 }
             ]
         }

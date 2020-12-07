@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss'
 
 const Portfolios = React.forwardRef((props, ref) => {
     const {
         portfolios
     } = props;
+
+    const [ modalFlag, setModalFlag ] = useState(false);
+
     return (
         <div className="section-portfolio" ref={ref}>
             <div className="section-wrapper">
@@ -12,7 +15,7 @@ const Portfolios = React.forwardRef((props, ref) => {
                 <div className="portfolio-section">
                     {portfolios.map(portfolioItem => (
                         <div className="item-container">
-                            <div className="image-container" style={{backgroundImage: `url("${portfolioItem.url}")`}}>
+                            <div className="image-container" style={{backgroundImage: `url("${portfolioItem.url}")`}} onClick={() => setModalFlag(true)}>
                                 <div className="detail-option">
                                     <span>View Details</span>
                                 </div>

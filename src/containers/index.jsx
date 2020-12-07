@@ -15,6 +15,7 @@ import Interest from './Interest';
 import Contact from './Contact';
 import NotFound from "./NotFound";
 import Education from './Education';
+import {Helmet} from "react-helmet";
 
 const MainPage = () => {
     let location = useLocation();
@@ -105,6 +106,10 @@ const MainPage = () => {
 
     return (
         <div className="main-page-container">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>{`${profile.firstName} ${profile.lastName}`} Introduction</title>
+            </Helmet>
             <Header
                 firstName={profile.firstName}
                 lastName={profile.lastName}

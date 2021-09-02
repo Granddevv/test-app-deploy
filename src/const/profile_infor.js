@@ -241,7 +241,7 @@ const profileInfor = [
         firstName: 'Marc',
         lastName: 'Liu',
         title: 'Full Stack React/React Native & Node Developer',
-        profileUrl: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1606924673/photo_kdtfbp.jpg',
+        profileUrl: 'https://res.cloudinary.com/dzz64onxh/image/upload/v1630593065/1_2_czycvr.jpg',
         contactOption: {
             linkedin: 'https://www.linkedin.com/in/marc-liu-5415b019b/',
             phone: '+1 (343) 520-1427',
